@@ -1,5 +1,7 @@
 package org.example;
 
+import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.leapYear;
+
 public class Main {
     int a;
     float b;
@@ -12,6 +14,22 @@ public class Main {
         Main obj=new Main();
         obj.displayMessage();
         obj.printDefaultValues();
+        obj.checkString("Mumbai","Mumbai");
+
+    }
+
+
+
+    private void checkString( String s1, String s2) {
+        if (s1.equals(s2))
+        {
+            System.out.println("String are equal");
+        }
+        else
+        {
+            System.out.println("String are different");
+        }
+        System.out.println("----------------------------------------");
     }
 
     public void displayMessage() {
